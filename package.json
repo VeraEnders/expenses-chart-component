@@ -1,0 +1,19 @@
+{
+  "name": "expenses-chart-component",
+  "version": "1.0.0",
+  "description": "Responsive bar chart component with interactive hover states, highlighting the current day, and dynamically generated bars based on local JSON data",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch src/styles/main.scss src/styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VeraEnders/expenses-chart-component.git"
+  },
+  "author": "VeraEnders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VeraEnders/expenses-chart-component/issues"
+  },
+  "homepage": "https://github.com/VeraEnders/expenses-chart-component#readme"
+}
