@@ -69,17 +69,16 @@ body {
 }
 
 .chart {
-  height: 15.625rem;
+  width: 100%;
+  height: 10.625rem;
   position: relative;
-  @include mq-medium {
-  height: 17.125rem;
-  }
+  margin-block: size(30);
 }
 
 .chart::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -(size(10));
   left: 0;
   width: 100%;
   height: 2px;
