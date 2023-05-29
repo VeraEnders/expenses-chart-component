@@ -24,6 +24,12 @@ body {
   font-family: "DM Sans", sans-serif;
   background-color: hsl(27deg, 66%, 92%);
   color: hsl(25deg, 47%, 15%);
+  font-size: 0.938rem;
+}
+@media (min-width: 48rem) {
+  body {
+    font-size: 1.125rem;
+  }
 }
 
 .expenses-component {
@@ -73,6 +79,16 @@ body {
   left: 0;
 }
 
+.balance__amount {
+  font-size: 1.5rem;
+}
+@media (min-width: 48rem) {
+  .balance__amount {
+    margin-top: 0.625rem;
+    font-size: 2rem;
+  }
+}
+
 .transition {
   transition: all 0.5s ease-out;
 }
@@ -109,6 +125,10 @@ body {
   .py-30-40 {
     padding-block: 2.5rem;
   }
+}
+
+.fw-700 {
+  font-weight: 700;
 }
 
 .container {

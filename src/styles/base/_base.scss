@@ -4,6 +4,10 @@ body {
   font-family: $ff-sans;
   background-color: clr(primary, xs);
   color: clr(neutral, l);
+  font-size: size(15);
+  @include mq-medium {
+    font-size: size(18);
+  }
 }
 
 .expenses-component {
@@ -46,5 +50,13 @@ body {
   background-color: clr(neutral, s);
   &::before {
     left: 0;
+  }
+}
+
+.balance__amount {
+  font-size: size(24);
+  @include mq-medium {
+    margin-top: size(10);
+    font-size: size(32);
   }
 }

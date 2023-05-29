@@ -34,6 +34,10 @@
   }
 }
 
+.fw-700 {
+  font-weight: 700;
+}
+
 .container {
   --padding: #{$container-inline-padding} * 2;
   --max-width-s: #{$container-max-width-s};
