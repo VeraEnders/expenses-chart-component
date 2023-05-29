@@ -13,7 +13,7 @@
 </head>
 <body>
   <section class="expenses-component">
-    <header class="container bg-accent text-light transition">
+    <header class="container mb-16-24 bg-accent text-light transition">
       <div class="px-20-40 py-24 d-flex transition">
         <div>
           <p>My balance</p>
@@ -24,20 +24,20 @@
     </header>
 
     <section class="container bg-light transition">
-      <div class="px-20-40 py-30-40">
-        <h1 class="expenses-component__title">Spending - Last 7 days</h1>
+      <div class="px-20-40 py-28-40">
+        <h1 class="expenses-component__title fw-700">Spending - Last 7 days</h1>
         <div class="chart">
           <canvas id="expenses-by-day-chart">
-  
           </canvas>
         </div>
-        <div class="expenses-component__content__total__container">
+        <div class="mt-24-32">
           <p>Total this month</p>
-          <div class="amount__stat | d-flex">
-            <p class="total__amount">$478.33</p>
-            <p>
-              <span> +2.4%</span>
-              <br>from last month</p>
+          <div class="d-flex">
+            <p class="total__amount fw-700">$478.33</p>
+            <p class="monthly-change">
+              <span class="fw-700"> +2.4%</span>
+              <span>from last month</span>
+            </p>
           </div>
         </div>
       </div>

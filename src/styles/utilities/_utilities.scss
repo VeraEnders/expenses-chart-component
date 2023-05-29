@@ -27,10 +27,24 @@
   padding-block: size(24);
 }
 
-.py-30-40 {
-  padding-block: size(30);
+.py-28-40 {
+  padding-block: size(28);
   @include mq-medium {
     padding-block: size(40);
+  }
+}
+
+.mt-24-32 {
+  margin-top: size(24);
+  @include mq-medium {
+    margin-top: size(32);
+  }
+}
+
+.mb-16-24 {
+  margin-bottom: size(16);
+  @include mq-medium {
+    margin-bottom: size(24);
   }
 }
 
