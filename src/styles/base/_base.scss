@@ -1,0 +1,50 @@
+@use "../abstracts" as *;
+
+body {
+  font-family: $ff-sans;
+  background-color: clr(primary, xs);
+  color: clr(neutral, l);
+}
+
+.expenses-component {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__icon {
+  cursor: pointer;
+  width: size(40);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: clr(neutral, l);
+  position: relative;
+  transition: background-color .5s;
+  @include mq-medium {
+    width: size(48);
+  }
+}
+
+.header__icon::before {
+  content: "";
+  width: size(40);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid clr(neutral, s);
+  position: absolute;
+  left: -(size(24));
+  top: 0;
+  transition: left .3s;
+  @include mq-medium {
+    width: size(48);
+  }
+}
+
+.header__icon:hover{
+  background-color: clr(neutral, s);
+  &::before {
+    left: 0;
+  }
+}

@@ -1,0 +1,5 @@
+@use "variables" as *;
+
+@mixin mq-medium {
+  @media (min-width: $breakpoint-medium) { @content; }
+}

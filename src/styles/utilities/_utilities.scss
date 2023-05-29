@@ -1,0 +1,55 @@
+@use "../abstracts" as *;
+
+.transition {
+  transition: all .5s ease-out;
+}
+
+.bg-accent {
+  background-color: clr(primary, s);
+}
+
+.bg-light {
+  background-color: clr(neutral, s);
+}
+
+.text-light {
+  color: clr(neutral, s);
+}
+
+.px-20-40 {
+  padding-inline: size(20);
+  @include mq-medium {
+    padding-inline: size(40);
+  }
+}
+
+.py-24 {
+  padding-block: size(24);
+}
+
+.py-30-40 {
+  padding-block: size(30);
+  @include mq-medium {
+    padding-block: size(40);
+  }
+}
+
+.container {
+  --padding: #{$container-inline-padding} * 2;
+  --max-width-s: #{$container-max-width-s};
+  --max-width-l: #{$container-max-width-l};
+
+  width: min(100% - var(--padding), var(--max-width-s));
+  margin-inline: auto;
+  border-radius: size(16);
+
+  @include mq-medium {
+    width: min(100% - var(--padding), var(--max-width-l));
+  }
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

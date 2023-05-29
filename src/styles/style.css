@@ -1,3 +1,134 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: hsl(27deg, 66%, 92%);
+  color: hsl(25deg, 47%, 15%);
+}
+
+.expenses-component {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__icon {
+  cursor: pointer;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: hsl(25deg, 47%, 15%);
+  position: relative;
+  transition: background-color 0.5s;
+}
+@media (min-width: 48rem) {
+  .header__icon {
+    width: 3rem;
+  }
+}
+
+.header__icon::before {
+  content: "";
+  width: 2.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid hsl(33deg, 100%, 98%);
+  position: absolute;
+  left: -1.5rem;
+  top: 0;
+  transition: left 0.3s;
+}
+@media (min-width: 48rem) {
+  .header__icon::before {
+    width: 3rem;
+  }
+}
+
+.header__icon:hover {
+  background-color: hsl(33deg, 100%, 98%);
+}
+.header__icon:hover::before {
+  left: 0;
+}
+
+.transition {
+  transition: all 0.5s ease-out;
+}
+
+.bg-accent {
+  background-color: hsl(10deg, 79%, 65%);
+}
+
+.bg-light {
+  background-color: hsl(33deg, 100%, 98%);
+}
+
+.text-light {
+  color: hsl(33deg, 100%, 98%);
+}
+
+.px-20-40 {
+  padding-inline: 1.25rem;
+}
+@media (min-width: 48rem) {
+  .px-20-40 {
+    padding-inline: 2.5rem;
+  }
+}
+
+.py-24 {
+  padding-block: 1.5rem;
+}
+
+.py-30-40 {
+  padding-block: 1.875rem;
+}
+@media (min-width: 48rem) {
+  .py-30-40 {
+    padding-block: 2.5rem;
+  }
+}
+
+.container {
+  --padding: 1rem * 2;
+  --max-width-s: 21.5rem;
+  --max-width-l: 34rem;
+  width: min(100% - var(--padding), var(--max-width-s));
+  margin-inline: auto;
+  border-radius: 1rem;
+}
+@media (min-width: 48rem) {
+  .container {
+    width: min(100% - var(--padding), var(--max-width-l));
+  }
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /*# sourceMappingURL=style.css.map */
