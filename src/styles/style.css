@@ -130,6 +130,28 @@ body {
   align-items: end;
 }
 
+.tooltip {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  z-index: 10;
+  background: hsl(25deg, 47%, 15%);
+  color: hsl(33deg, 100%, 98%);
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding-inline: 3px;
+  padding-block: 5px;
+  border-radius: 4px;
+}
+@media (min-width: 48rem) {
+  .tooltip {
+    font-size: 1rem;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+  }
+}
+
 .transition {
   transition: all 0.5s ease-out;
 }
