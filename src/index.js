@@ -49,6 +49,11 @@ function createChart(labels, amounts) {
           grid: {
             display: false
           },
+          ticks: {
+            font: {
+              size: 15
+            }
+          }
         },
         y: {
           beginAtZero: true,

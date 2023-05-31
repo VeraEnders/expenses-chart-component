@@ -100,19 +100,29 @@ body {
 
 .chart {
   width: 100%;
-  height: 10.625rem;
+  height: 12.625rem;
   position: relative;
   margin-block: 1.875rem;
+}
+@media (min-width: 48rem) {
+  .chart {
+    margin-block: 3rem;
+  }
 }
 
 .chart::after {
   content: "";
   position: absolute;
-  bottom: -0.625rem;
+  bottom: -1.5rem;
   left: 0;
   width: 100%;
   height: 2px;
   background: hsl(27deg, 66%, 92%);
+}
+@media (min-width: 48rem) {
+  .chart::after {
+    bottom: -1.875rem;
+  }
 }
 
 .total__amount {
@@ -168,6 +178,16 @@ body {
   color: hsl(33deg, 100%, 98%);
 }
 
+.py-16-10 {
+  padding-top: 1rem;
+}
+@media (min-width: 48rem) {
+  .py-16-10 {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+}
+
 .px-20-40 {
   padding-inline: 1.25rem;
 }
@@ -181,12 +201,12 @@ body {
   padding-block: 1.5rem;
 }
 
-.py-28-40 {
-  padding-block: 1.75rem;
+.py-24-32 {
+  padding-block: 1.5rem;
 }
 @media (min-width: 48rem) {
-  .py-28-40 {
-    padding-block: 2.5rem;
+  .py-24-32 {
+    padding-block: 2rem;
   }
 }
 

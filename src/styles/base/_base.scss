@@ -63,6 +63,7 @@ body {
 
 .expenses-component__title {
   font-size: size(24);
+  // padding-top: 10px;
   @include mq-medium {
     font-size: size(32);
   }
@@ -70,19 +71,25 @@ body {
 
 .chart {
   width: 100%;
-  height: 10.625rem;
+  height: 12.625rem;
   position: relative;
   margin-block: size(30);
+  @include mq-medium {
+    margin-block: size(48);
+  }
 }
 
 .chart::after {
   content: "";
   position: absolute;
-  bottom: -(size(10));
+  bottom: -(size(24));
   left: 0;
   width: 100%;
   height: 2px;
   background: clr(primary, xs);
+  @include mq-medium {
+    bottom: -(size(30));
+  }
 }
 
 .total__amount {

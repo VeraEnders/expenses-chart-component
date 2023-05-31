@@ -16,6 +16,14 @@
   color: clr(neutral, s);
 }
 
+.py-16-10 {
+  padding-top: size(16);
+  @include mq-medium {
+    padding-top: size(10);
+    padding-bottom: size(10);
+  }
+}
+
 .px-20-40 {
   padding-inline: size(20);
   @include mq-medium {
@@ -27,10 +35,10 @@
   padding-block: size(24);
 }
 
-.py-28-40 {
-  padding-block: size(28);
+.py-24-32 {
+  padding-block: size(24);
   @include mq-medium {
-    padding-block: size(40);
+    padding-block: size(32);
   }
 }
 
